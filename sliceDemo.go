@@ -1,4 +1,4 @@
-package sliceDemo
+package main
 
 import "fmt"
 
@@ -49,5 +49,10 @@ func main() {
 	//Copy the elements upto 3 elements from starting index
 	var uptoCopy = nameSlice[:3]
 	fmt.Println("Copied upto 3 elements from starting", uptoCopy)
+
+	//append one slice to another slice
+
+	nameSlice = append(nameSlice, vegList...)
+	fmt.Println("After appending slice to slice,", nameSlice)
 
 }
